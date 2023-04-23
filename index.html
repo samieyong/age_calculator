@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="descripton" content="Age calculator, online age calculator, age calculator website" />
+    <meta name="keywords" content="age, calculator, online, website, web app, app" />
+    <meta name="Author" content="Samuel Chukwu" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+
+  <body>
+    <main>
+      <div class="container">
+        <section class="input-container">
+          <div class="input-wrapper">
+            <label for="day">day</label>
+            <input type="text" id="day" placeholder="DD" />
+            <p class="error-message">This field is required</p>
+          </div>
+          <div class="input-wrapper">
+            <label for="month">month</label>
+            <input type="text" id="month" placeholder="MM" />
+            <p class="error-message">This field is required</p>
+          </div>
+          <div class="input-wrapper">
+            <label for="year">year</label>
+            <input type="text" id="year" placeholder="YYYY" />
+            <p class="error-message">This field is required</p>
+          </div>
+        </section>
+
+        <section class="btn-wrapper">
+          <hr />
+          <button class="submit-btn" >
+            <img src="images/icon-arrow.svg" alt="submit" />
+          </button>
+        </section>
+
+        <section class="result">
+          <h1>
+            <span class="years-result result-span-1">-- </span><span class="result-span-2"> years</span>
+          </h1>
+          <h1>
+            <span class="months-result result-span-1">-- </span
+            ><span id="happy" class="result-span-2"> months</span>
+          </h1>
+          <h1>
+            <span class="days-result result-span-1">-- </span><span id="birthday" class="result-span-2"> days</span>
+          </h1>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://samieyong.github.io/cv/">Samieyong</a>.
+      </div>
+    </footer>
+
+    <script src="script/main.js"></script>
+  </body>
+</html>

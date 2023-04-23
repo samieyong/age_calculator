@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+.rotate{
+  transform: rotateY(360deg);
+}
+
+main {
+  width: 100%;
+  min-height: 95vh;
+  background-color: hsl(0, 0%, 94%);
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+}
+.container {
+  width: 68rem;
+  height: 54rem;
+  border-radius: 3rem 3rem 16rem 3rem;
+  background-color: hsl(0, 0%, 100%);
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.input-container {
+  display: flex;
+}
+.input-wrapper {
+  margin-right: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.input-wrapper label {
+  color:hsl(0, 1%, 44%);
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+}
+.error label {
+  color: hsl(0, 100%, 67%);
+}
+.success label {
+  color: hsl(259, 100%, 65%);
+}
+.input-wrapper input {
+  width: 13rem;
+  height: 6rem;
+  border: 0.1rem solid hsl(0, 0%, 86%);
+  border-radius: 1rem;
+  margin: 0.8rem 0;
+  padding: 1.5rem;
+  font-size: 2.6rem;
+  outline: none;
+}
+.input-wrapper input:focus{
+  border: 0.4rem solid hsl(0, 0%, 86%);
+}
+.success input {
+  border: 0.1rem solid hsl(259, 100%, 65%);
+}
+.error input {
+  border: 0.1rem solid hsl(0, 100%, 67%);
+}
+.input-wrapper input::placeholder {
+  font-size: 2.6rem;
+}
+.error-message {
+  color: hsl(0, 100%, 67%);
+  font-size: 0.9rem;
+  font-style: italic;
+  font-weight: 800;
+  letter-spacing: 0.1rem;
+  text-transform: capitalize;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.error .error-message {
+  visibility: visible;
+  opacity: 1;
+}
+.btn-wrapper {
+  position: relative;
+  width: 90%;
+}
+.submit-btn {
+  width: 8rem;
+  height: 8rem;
+  background-color: hsl(259, 100%, 65%);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: -3.5rem;
+  right: 0;
+  transition: transform 1s;
+}
+.submit-btn:hover{
+  box-shadow: 0rem 0rem 1rem hsl(0, 1%, 44%);
+}
+
+.result h1 {
+  font-size: 7.5rem;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 9rem;
+  position: relative;
+}
+.result-span-1 {
+  color: hsl(259, 100%, 65%);
+  position: absolute;
+  left: 0;
+  transition: all 1s;  
+}
+.result-span-2{
+  padding-left: 11.5rem;
+}
+
+footer {
+  text-align: center;
+  padding: 0.8rem 0;
+}
+.attribution {
+  font-size: 11px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 712px) {
+  html{
+    font-size: 52.5%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .container{
+    max-width: 90vw;
+    height: 60rem;
+    padding: 6rem 2rem 4rem 2rem;
+  }
+  .input-container{
+    width: 90%;
+    justify-content: space-evenly;
+  }
+  .input-wrapper input{
+    width: 100%;
+    height: 8.5rem;
+  }
+  .submit-btn{
+    right: 38%;
+  }
+  .result h1{
+    font-size: 6rem;
+  }
+  .result-span-2{
+    padding-left: 9rem;
+  }
+}
+
+@media only screen and (max-width: 418px){
+  .container{
+    height: 52rem;
+    border-radius: 2rem 2rem 12rem 2rem;
+  }
+  .input-wrapper label{
+    font-size: 1.2rem;
+  }
+  .input-wrapper{
+    margin-right: 1.5rem;
+  }  
+  .input-wrapper input{
+    height: 6rem;
+    font-size: 2rem; 
+    padding: 0.2rem .5rem;   
+  }
+  .input-wrapper input::placeholder {
+    font-size: 2rem;
+  }  
+  .error-message{
+    font-size: 0.7rem;
+  }
+  .result h1{
+    font-size: 4.5rem;
+    line-height: 7rem;
+  }
+  .result-span-2{
+    padding-left: 7rem;
+  }
+}
+
+@media only screen and (max-width: 296px){
+  .container{
+    height: 44rem;
+  }
+  .result h1{
+    font-size: 3rem;
+    line-height: 5rem;
+  }
+  .input-wrapper input{
+    height: 4rem;
+    font-size: 1.6rem; 
+    padding: 0.2rem;   
+  }
+  .submit-btn{
+    right: 30%;
+  }
+  .result-span-2{
+    padding-left: 4.5rem;
+  }
+}
