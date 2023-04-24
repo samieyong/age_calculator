@@ -19,7 +19,8 @@ This is a solution to the [Age calculator app challenge on Frontend Mentor](http
 ## Overview
 The Age Calculator is a web app where users input their Date of Birth and the app calculates 
 their age and outputs it. It lets users know the number of years, months and days old 
-they are.
+they are. Remember to click the purple button to display the result as pressing the enter key
+would not produce the result.
 
 ### The challenge
 
@@ -38,13 +39,13 @@ Users should be able to:
 
 ### Screenshot
 
-- ./screenshot/desktop_preview.jpg
-- ./screenshot/mobile_preview.jpg
+![./screenshot/desktop_preview.jpg]
+![./screenshot/mobile_preview.jpg]
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/samieyong/age_calculator]
+- Live Site URL: [https://samieyong.github.io/age_calculator/]
 
 ## My process
 - I wrote my HTML first
