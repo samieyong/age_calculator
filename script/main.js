@@ -191,8 +191,8 @@ function outputMonthAndDay(inputArr){
 }
 
 // Monitor the submit btn for a click
-submitBtn.addEventListener("click", () => {
-
+submitBtn.addEventListener("click", (e) => {
+  e.preventDefault();
   // rotate submit button and result span after each click
   submitBtn.classList.toggle('rotate');
   resultSpan1.forEach(element => {

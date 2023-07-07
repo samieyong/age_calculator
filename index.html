@@ -20,30 +20,32 @@
   <body>
     <main>
       <div class="container">
-        <section class="input-container">
-          <div class="input-wrapper">
-            <label for="day">day</label>
-            <input type="text" id="day" placeholder="DD" />
-            <p class="error-message">This field is required</p>
-          </div>
-          <div class="input-wrapper">
-            <label for="month">month</label>
-            <input type="text" id="month" placeholder="MM" />
-            <p class="error-message">This field is required</p>
-          </div>
-          <div class="input-wrapper">
-            <label for="year">year</label>
-            <input type="text" id="year" placeholder="YYYY" />
-            <p class="error-message">This field is required</p>
-          </div>
-        </section>
-
-        <section class="btn-wrapper">
-          <hr />
-          <button class="submit-btn" >
-            <img src="images/icon-arrow.svg" alt="submit" />
-          </button>
-        </section>
+        <form>
+          <section class="input-container">
+            <div class="input-wrapper">
+              <label for="day">day</label>
+              <input type="text" id="day" placeholder="DD" autocomplete="off"/>
+              <p class="error-message">This field is required</p>
+            </div>
+            <div class="input-wrapper">
+              <label for="month">month</label>
+              <input type="text" id="month" placeholder="MM" autocomplete="off"/>
+              <p class="error-message">This field is required</p>
+            </div>
+            <div class="input-wrapper">
+              <label for="year">year</label>
+              <input type="text" id="year" placeholder="YYYY" autocomplete="off"/>
+              <p class="error-message">This field is required</p>
+            </div>
+          </section>
+  
+          <section class="btn-wrapper">
+            <hr />
+            <button class="submit-btn" >
+              <img src="images/icon-arrow.svg" alt="submit" />
+            </button>
+          </section>
+        </form>
 
         <section class="result">
           <h1>
@@ -65,7 +67,7 @@
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="https://samieyong.github.io/cv/">Samieyong</a>.
+        >. Coded by <a href="https://samieyong.github.io/about_me/">Samieyong</a>.
       </div>
     </footer>
 
